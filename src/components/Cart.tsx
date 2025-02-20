@@ -1,8 +1,20 @@
 import React from 'react';
 import './Cart.css';
-
+// Define the Product type
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
+}
 interface CartProps {
-  cart: any[];
+  cart: Product[];
   removeFromCart: (item: number) => void;
   getTotal: () => number;
 }

@@ -1,7 +1,11 @@
 import React from 'react';
 import './ProfileDetails.css';
 interface ProfileDetailsProps {
-  data: any;
+  data: {
+    name: string;
+    email: string;
+    src: string;
+  };
 }
 
 const ProfileDetails: React.FC<ProfileDetailsProps> = ({ data }) => {

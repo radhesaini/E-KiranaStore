@@ -8,14 +8,31 @@ import './index.css';
 import Cart from './components/Cart';
 import ProfileDetails from './components/ProfileDetails';
 
+// Define the Product type
+interface Product {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  image: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
+}
+
 function App() {
-  const [cart, setCart] = useState<any[]>([]);
-  const [profile, _] = useState({
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    src: 'https://randomuser.me/api/portraits/men/75.jpg',
-  });
-  const [products, setProducts] = useState<any[]>([]);
+  //Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any fix
+  const [cart, setCart] = useState<Product[]>([]);
+  interface Profile {
+    name: string;
+    email: string;
+    src: string;
+  }
+
+  const [profile, setProfile] = useState<Profile | null>(null);
+  const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -32,11 +49,15 @@ function App() {
         console.error('Could not fetch products:', error);
       }
     };
-
+    setProfile({
+      name: 'John Doe',
+      email: 'john.doe@example.com',
+      src: 'https://randomuser.me/api/portraits/men/75.jpg',
+    });
     fetchProducts();
   }, []);
 
-  const addToCart = (item: any) => {
+  const addToCart = (item: Product) => {
     setCart([...cart, item]);
   };
 
@@ -50,6 +71,9 @@ function App() {
     return cart.reduce((total, item) => total + item.price, 0);
   };
 
+  // const addProductHandler = (newProduct: any) => {
+  //   setProducts([...products, newProduct]);
+  // };
   return (
     <Router>
       <header>
@@ -70,7 +94,13 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<Home products={products} addToCart={addToCart} />}
+          element={
+            <Home
+              // addProductHandler={addProductHandler}
+              products={products}
+              addToCart={addToCart}
+            />
+          }
         />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
