@@ -42,9 +42,7 @@ describe('App Component', () => {
 
   it('renders the copyright information in the footer', () => {
     render(<App />);
-    const copyrightText = screen.getByText(
-      /© 2025 {2}Shop. All rights reserved./i,
-    );
+    const copyrightText = screen.getByText(/@2025 Shop. All rights reserved./i);
     expect(copyrightText).toBeInTheDocument();
   });
 });

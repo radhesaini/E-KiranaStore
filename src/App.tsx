@@ -153,7 +153,7 @@ function App() {
               <i className="fab fa-instagram"></i>
             </a>
           </div>
-          <p>&copy; 2025 Shop. All rights reserved.</p>
+          <p>&copy; @2025 Shop. All rights reserved.</p>
         </div>
       </footer>
     </Router>
