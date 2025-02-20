@@ -3,13 +3,13 @@ import './Contact.css';
 function Contact() {
   return (
     <div className="contact-container">
-      <h2>Contact Us</h2>
+      <h2 data-testid="contact-title">Contact Us</h2>
       <p>
         If you have any questions or comments, please don't hesitate to contact
         us.
       </p>
       <p>Email: support@kiranashop.com</p>
-      <p>Phone: +123 456 7890</p>
+      <p data-testid="phoneno">Phone: +123 456 7890</p>
 
       <form>
         <label htmlFor="name">Name:</label>

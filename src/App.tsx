@@ -77,13 +77,17 @@ function App() {
   return (
     <Router>
       <header>
-        <h1 className="ml-2">Kirana Shop</h1>
+        <h1 className="ml-2" data-testid="title">
+          Kirana Shop
+        </h1>
         <nav>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/services">Services</Link>
-          <Link to="/cart">Cart ({cart.length})</Link>
+          <Link to="/cart">
+            <i className="fas fa-shopping-cart"></i> ({cart.length})
+          </Link>
           {profile?.name && (
             <Link to="/profile">
               <img className="profile" src={profile.src} alt="Profile" />
