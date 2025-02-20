@@ -1,0 +1,29 @@
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #4caf50;
+}
+
+.profile-details h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  color: #666;
+  margin-bottom: 5px;
+}
