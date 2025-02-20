@@ -8,7 +8,7 @@ describe('App Component', () => {
     render(<App />);
   });
 
-  it('displays the Kirana Shop heading', () => {
+  it('displays the E - Store heading', () => {
     render(<App />);
     const headingElement = screen.getByTestId('title');
     expect(headingElement).toBeInTheDocument();
@@ -43,7 +43,7 @@ describe('App Component', () => {
   it('renders the copyright information in the footer', () => {
     render(<App />);
     const copyrightText = screen.getByText(
-      /© 2025 Kirana Shop. All rights reserved./i,
+      /© 2025 {2}Shop. All rights reserved./i,
     );
     expect(copyrightText).toBeInTheDocument();
   });

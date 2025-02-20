@@ -107,3 +107,7 @@
   color: white;
   border-color: #007bff;
 }
+
+.Carousel-caption {
+  color: blue !important;
+}

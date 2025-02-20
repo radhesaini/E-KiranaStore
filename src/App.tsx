@@ -78,7 +78,7 @@ function App() {
     <Router>
       <header>
         <h1 className="ml-2" data-testid="title">
-          Kirana Shop
+          <img src="/logo.png" alt="logo" height={50} width={50} />E - Store
         </h1>
         <nav>
           <Link to="/">Home</Link>
@@ -153,7 +153,7 @@ function App() {
               <i className="fab fa-instagram"></i>
             </a>
           </div>
-          <p>&copy; 2025 Kirana Shop. All rights reserved.</p>
+          <p>&copy; 2025 Shop. All rights reserved.</p>
         </div>
       </footer>
     </Router>

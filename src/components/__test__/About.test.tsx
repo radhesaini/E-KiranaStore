@@ -13,7 +13,7 @@ describe('About Component', () => {
   it('renders the welcome message', () => {
     render(<About />);
     const welcomeMessage = screen.getByText(
-      /Welcome to Kirana Shop, your number one source for all grocery needs./i,
+      /Welcome to {2}Shop, your number one source for all grocery needs./i,
     );
     expect(welcomeMessage).toBeInTheDocument();
   });
@@ -21,7 +21,7 @@ describe('About Component', () => {
   it('renders the founding story', () => {
     render(<About />);
     const foundingStory = screen.getByText(
-      /Founded in 2020, Kirana Shop has come a long way from its beginnings in a small town./i,
+      /Founded in 2020, {2}Shop has come a long way from its beginnings in a small town./i,
     );
     expect(foundingStory).toBeInTheDocument();
   });
@@ -37,7 +37,7 @@ describe('About Component', () => {
   it('renders the sustainability commitment', () => {
     render(<About />);
     const sustainabilityCommitment = screen.getByText(
-      /At Kirana Shop, we are committed to sustainability and ethical sourcing./i,
+      /At {2}Shop, we are committed to sustainability and ethical sourcing./i,
     );
     expect(sustainabilityCommitment).toBeInTheDocument();
   });
@@ -53,7 +53,7 @@ describe('About Component', () => {
   it('renders the thank you message', () => {
     render(<About />);
     const thankYouMessage = screen.getByText(
-      /Thank you for choosing Kirana Shop. We appreciate your business and look forward to serving you for many years to come./i,
+      /Thank you for choosing {2}Shop. We appreciate your business and look forward to serving you for many years to come./i,
     );
     expect(thankYouMessage).toBeInTheDocument();
   });

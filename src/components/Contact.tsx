@@ -8,7 +8,7 @@ function Contact() {
         If you have any questions or comments, please don't hesitate to contact
         us.
       </p>
-      <p>Email: support@kiranashop.com</p>
+      <p>Email: support@shop.com</p>
       <p data-testid="phoneno">Phone: +123 456 7890</p>
 
       <form>

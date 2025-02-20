@@ -58,8 +58,12 @@ function Home({
               style={{ height: '400px', objectFit: 'contain' }}
             />
             <Carousel.Caption>
-              <h3>{product.title}</h3>
-              <p>{product.description.substring(0, 100)}...</p>
+              <h3 style={{ color: 'blue', fontWeight: 800 }}>
+                {product.title}
+              </h3>
+              <p style={{ color: 'red' }}>
+                {product.description.substring(0, 100)}...
+              </p>
             </Carousel.Caption>
           </Carousel.Item>
         ))}

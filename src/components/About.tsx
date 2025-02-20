@@ -3,14 +3,14 @@ function About() {
     <div className="container">
       <h2>About Us</h2>
       <p>
-        Welcome to Kirana Shop, your number one source for all grocery needs.
-        We're dedicated to providing you the best products, with a focus on
+        Welcome to Shop, your number one source for all grocery needs. We're
+        dedicated to providing you the best products, with a focus on
         dependability, customer service, and uniqueness.
       </p>
       <p>
-        Founded in 2020, Kirana Shop has come a long way from its beginnings in
-        a small town. When we first started out, our passion for providing the
-        best grocery items drove us to start our own business.
+        Founded in 2020, Shop has come a long way from its beginnings in a small
+        town. When we first started out, our passion for providing the best
+        grocery items drove us to start our own business.
       </p>
       <p>
         We now serve customers all over the country and are thrilled to be a
@@ -28,9 +28,9 @@ function About() {
         customers receive the freshest and best products available.
       </p>
       <p>
-        At Kirana Shop, we are committed to sustainability and ethical sourcing.
-        We strive to minimize our environmental impact by reducing waste and
-        using eco-friendly packaging whenever possible. We also ensure that our
+        At Shop, we are committed to sustainability and ethical sourcing. We
+        strive to minimize our environmental impact by reducing waste and using
+        eco-friendly packaging whenever possible. We also ensure that our
         suppliers adhere to fair labor practices and treat their workers with
         respect.
       </p>
@@ -40,13 +40,13 @@ function About() {
         you need and answer any questions you may have.
       </p>
       <p>
-        Thank you for choosing Kirana Shop. We appreciate your business and look
+        Thank you for choosing Shop. We appreciate your business and look
         forward to serving you for many years to come.
       </p>
       <p>
         Sincerely,
         <br />
-        The Kirana Shop Team
+        The Shop Team
       </p>
       {/* Add more paragraphs to fill at least one page */}
       <p>

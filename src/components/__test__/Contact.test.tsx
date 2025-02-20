@@ -12,7 +12,7 @@ describe('Contact Component', () => {
 
   it('renders the contact information', () => {
     render(<Contact />);
-    const emailElement = screen.getByText(/Email: support@kiranashop.com/i);
+    const emailElement = screen.getByText(/Email: support@shop.com/i);
     const phoneElement = screen.getByTestId('phoneno');
 
     expect(emailElement).toBeInTheDocument();
